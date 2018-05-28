@@ -46,14 +46,78 @@ ki2.log("Channel Token : " + str(channelToken))
 #channelToken = ki4.getChannelResult()
 #ki4.log("Channel Token : " + str(channelToken))
 
+ki5 = LINE()
+#ki5 = LINE("")
+#ki5 = LINE("Email","Password")
+ki5.log("Auth Token : " + str(ki5.authToken))
+channelToken = ki5.getChannelResult()
+ki5.log("Channel Token : " + str(channelToken))
 
-KAC = [nadya]
+ki6 = LINE()
+#ki6 = LINE("")
+#ki6 = LINE("Email","Password")
+ki6.log("Auth Token : " + str(ki6.authToken))
+channelToken = ki6.getChannelResult()
+ki6.log("Channel Token : " + str(channelToken))
+
+#ki7 = LINE()
+#ki7 = LINE("")
+#ki7 = LINE("Email","Password")
+#ki7.log("Auth Token : " + str(ki3.authToken))
+#channelToken = ki7.getChannelResult()
+#ki7.log("Channel Token : " + str(channelToken))
+
+#ki8 = LINE()
+#ki8 = LINE("")
+#ki8 = LINE("Email","Password")
+#ki8.log("Auth Token : " + str(ki8.authToken))
+#channelToken = ki8.getChannelResult()
+#ki8.log("Channel Token : " + str(channelToken))
+
+k9 = LINE()
+#k9 = LINE("")
+#k9 = LINE("Email","Password")
+k9.log("Auth Token : " + str(k9.authToken))
+channelToken = ki.getChannelResult()
+k9.log("Channel Token : " + str(channelToken))
+
+ki10 = LINE()
+#ki10 = LINE("")
+#ki10 = LINE("Email","Password")
+ki2.log("Auth Token : " + str(ki10.authToken))
+channelToken = ki10.getChannelResult()
+ki10.log("Channel Token : " + str(channelToken))
+
+#ki11 = LINE()
+#ki11 = LINE("")
+#ki11 = LINE("Email","Password")
+#ki11.log("Auth Token : " + str(ki3.authToken))
+#channelToken = ki11.getChannelResult()
+#ki3.log("Channel Token : " + str(channelToken))
+
+#ki12 = LINE()
+#ki12 = LINE("")
+#ki12 = LINE("Email","Password")
+#ki12.log("Auth Token : " + str(ki12.authToken))
+#channelToken = ki4.getChannelResult()
+#ki2.log("Channel Token : " + str(channelToken))
+
+
+KAC = [nadya,kimid,ki2mid,ki3mid,ki4mid,ki5mid,ki6mid,ki7mid,ki8mid,ki9mid,ki10mid,ki11mid,ki12mid]
 
 nadyaMID = nadya.profile.mid
 kiMID = ki.profile.mid
 ki2MID = ki2.profile.mid
 #ki3MID = ki3.profile.mid
 #ki4MID = ki4.profile.mid
+ki5MID = ki5.profile.mid
+ki6MID = ki6.profile.mid
+#ki7MID = ki7.profile.mid
+#ki8MID = ki8.profile.mid
+ki9MID = ki9.profile.mid
+ki10MID = ki10.profile.mid
+#ki11MID = ki11.profile.mid
+#ki12MID = ki12.profile.mid
 
 Bots = [nadya]
 creator = ["ub139a3d989ac57b879c51b75ecb80dcf"]
@@ -65,24 +129,57 @@ kiProfile = ki.getProfile()
 ki2Profile = ki2.getProfile()
 #ki3Profile = ki3.getProfile()
 #ki4Profile = ki4.getProfile()
+ki5Profile = ki5.getProfile()
+ki6Profile = ki6.getProfile()
+#ki7Profile = ki7.getProfile()
+#ki8Profile = ki8.getProfile()
+ki9Profile = ki9.getProfile()
+ki10Profile = ki10.getProfile()
+#ki11Profile = ki11.getProfile()
+#ki12Profile = ki12.getProfile()
 
 lineSettings = nadya.getSettings()
 kiSettings = ki.getSettings()
 ki2Settings = ki2.getSettings()
 #ki3Settings = ki3.getSettings()
 #ki4Settings = ki4.getSettings()
+ki5Settings = ki5.getSettings()
+ki6Settings = ki6.getSettings()
+#k73Settings = ki7.getSettings()
+#ki8Settings = ki8.getSettings()
+ki9Settings = ki9.getSettings()
+ki10Settings = ki10.getSettings()
+#ki11Settings = ki11.getSettings()
+#ki12Settings = ki12.getSettings()
 
 oepoll = OEPoll(nadya)
 oepoll1 = OEPoll(ki)
 oepoll2 = OEPoll(ki2)
 #oepoll3 = OEPoll(ki3)
 #oepoll4 = OEPoll(ki4)
+oepoll5 = OEPoll(ki5)
+oepoll6 = OEPoll(ki6)
+#oepoll7 = OEPoll(ki7)
+#oepoll8 = OEPoll(ki8)
+oepoll9 = OEPoll(ki9)
+oepoll10 = OEPoll(ki10)
+#oepoll11 = OEPoll(ki11)
+#oepoll12 = OEPoll(ki12)
+
 
 responsename = nadya.getProfile().displayName
 responsename2 = ki.getProfile().displayName
 responsename3 = ki2.getProfile().displayName
 #responsename4 = ki3.getProfile().displayName
 #responsename5 = ki4.getProfile().displayName
+responsename6 = ki5.getProfile().displayName
+responsename7 = ki6.getProfile().displayName
+#responsename8 = ki7.getProfile().displayName
+#responsename9 = ki8.getProfile().displayName
+responsename10 = ki9.getProfile().displayName
+responsename11 = ki10.getProfile().displayName
+#responsename12 = ki11.getProfile().displayName
+#responsename13 = ki12.getProfile().displayName
 #==============================================================================#
 
 
@@ -139,7 +236,7 @@ def sendMessageWithMention(to, mid):
         
 def helpmessage():
     helpMessage = "╔═══════════════" + "\n" + \
-                  "╠♥ ✿✿✿ WJ_YUDI ✿✿✿ ♥" + "\n" + \
+                  "╠♥ ==== WJ_YUDI ====" + "\n" + \
                   "║" + "\n" + \
                   "╠══✪〘 Menu 〙✪══" + "\n" + \
                   "║" + "\n" + \
@@ -740,7 +837,7 @@ def lineBot(op):
                             nadya.sendMessage(msg.to,"The Adminlist is empty")
                         else:
                             nadya.sendMessage(msg.to,"Tunggu...")
-                            mc = "╔═══════════════\n╠♥ ✿✿✿ yudi_std02 ✿✿✿ ♥\n╠══✪〘 Admin List 〙✪═══\n"
+                            mc = "╔═══════════════\n╠=== yudi_std02 ===\n╠══✪〘 Admin List 〙✪═══\n"
                             for mi_d in admin:
                                 mc += "╠✪ " +nadya.getContact(mi_d).displayName + "\n"
                             nadya.sendMessage(msg.to,mc + "╠═══════════════\n╠✪〘 line.me/ti/p/~yudi_std02. 〙\n╚═══════════════")
@@ -749,113 +846,113 @@ def lineBot(op):
                     if msg._from in Owner:
                         if settings["protect"] == True:
                             if settings["lang"] == "JP":
-                                nadya.sendMessage(msg.to,"➲ Protection Already On")
+                                nadya.sendMessage(msg.to,"✪ Protection Already On✪")
                             else:
-                                nadya.sendMessage(msg.to,"➲ Protection Set To On")
+                                nadya.sendMessage(msg.to,"✪ Protection Set To On✪")
                         else:
                             settings["protect"] = True
                             if settings["lang"] == "JP":
-                                nadya.sendMessage(msg.to,"➲ Protection Set To On")
+                                nadya.sendMessage(msg.to,"✪ Protection Set To On✪")
                             else:
-                                nadya.sendMessage(msg.to,"➲ Protection Already On")
+                                nadya.sendMessage(msg.to,"✪ Protection Already On✪")
                                 
                 elif text.lower() == 'protect off':
                     if msg._from in Owner:
                         if settings["protect"] == False:
                             if settings["lang"] == "JP":
-                                nadya.sendMessage(msg.to,"➲ Protection Already Off")
+                                nadya.sendMessage(msg.to,"✪ Protection Already Off✪")
                             else:
-                                nadya.sendMessage(msg.to,"➲ Protection Set To Off")
+                                nadya.sendMessage(msg.to,"✪ Protection Set To Off✪")
                         else:
                             settings["protect"] = False
                             if settings["lang"] == "JP":
-                                nadya.sendMessage(msg.to,"➲ Protection Set To Off")
+                                nadya.sendMessage(msg.to,"✪ Protection Set To Off✪")
                             else:
-                                nadya.sendMessage(msg.to,"➲ Protection Already Off")
+                                nadya.sendMessage(msg.to,"✪ Protection Already Off✪")
 #----------------------------------------------------------------------------------------                        
                 elif text.lower() == 'qrprotect on':
                     if msg._from in Owner:
                         if settings["qrprotect"] == True:
                             if settings["lang"] == "JP":
-                                nadya.sendMessage(msg.to,"➲ Protection Qr Already On")
+                                nadya.sendMessage(msg.to,"✪ Protection Qr Already On✪")
                             else:
-                                nadya.sendMessage(msg.to,"➲ Protection Qr Set To On")
+                                nadya.sendMessage(msg.to,"✪ Protection Qr Set To On✪")
                         else:
                             settings["qrprotect"] = True
                             if settings["lang"] == "JP":
-                                nadya.sendMessage(msg.to,"➲ Protection Qr Set To On")
+                                nadya.sendMessage(msg.to,"✪ Protection Qr Set To On✪")
                             else:
-                                nadya.sendMessage(msg.to,"➲ Protection Qr Already On")
+                                nadya.sendMessage(msg.to,"✪ Protection Qr Already On✪")
                                 
                 elif text.lower() == 'qrprotect off':
                     if msg._from in Owner:
                         if settings["qrprotect"] == False:
                             if settings["lang"] == "JP":
-                                nadya.sendMessage(msg.to,"➲ Protection Qr Already Off")
+                                nadya.sendMessage(msg.to,"✪ Protection Qr Already Off✪")
                             else:
-                                nadya.sendMessage(msg.to,"➲ Protection Qr Set To Off")
+                                nadya.sendMessage(msg.to,"✪ Protection Qr Set To Off✪")
                         else:
                             settings["qrprotect"] = False
                             if settings["lang"] == "JP":
-                                nadya.sendMessage(msg.to,"➲ Protection Qr Set To Off")
+                                nadya.sendMessage(msg.to,"✪ Protection Qr Set To Off✪")
                             else:
-                                nadya.sendMessage(msg.to,"➲ Protection Qr Already Off")
+                                nadya.sendMessage(msg.to,"✪ Protection Qr Already Off✪")
 #-------------------------------------------------------------------------------
                 elif text.lower() == 'inviteprotect on':
                     if msg._from in Owner:
                         if settings["inviteprotect"] == True:
                             if settings["lang"] == "JP":
-                                nadya.sendMessage(msg.to,"➲ Protection Invite Already On")
+                                nadya.sendMessage(msg.to,"✪ Protection Invite Already On✪")
                             else:
-                                nadya.sendMessage(msg.to,"➲ Protection Invite Set To On")
+                                nadya.sendMessage(msg.to,"✪ Protection Invite Set To On✪")
                         else:
                             settings["inviteprotect"] = True
                             if settings["lang"] == "JP":
-                                nadya.sendMessage(msg.to,"➲ Protection Invite Set To On")
+                                nadya.sendMessage(msg.to,"✪ Protection Invite Set To On✪")
                             else:
-                                nadya.sendMessage(msg.to,"➲ Protection Invite Already On")
+                                nadya.sendMessage(msg.to,"✪ Protection Invite Already On✪")
                                 
                 elif text.lower() == 'inviteprotect off':
                     if msg._from in Owner:
                         if settings["inviteprotect"] == False:
                             if settings["lang"] == "JP":
-                                nadya.sendMessage(msg.to,"➲ Protection Invite Already Off")
+                                nadya.sendMessage(msg.to,"✪ Protection Invite Already Off✪")
                             else:
-                                nadya.sendMessage(msg.to,"➲ Protection Invite Set To Off")
+                                nadya.sendMessage(msg.to,"✪ Protection Invite Set To Off✪")
                         else:
                             settings["inviteprotect"] = False
                             if settings["lang"] == "JP":
-                                nadya.sendMessage(msg.to,"➲ Protection Invite Set To Off")
+                                nadya.sendMessage(msg.to,"✪ Protection Invite Set To Off✪")
                             else:
-                                nadya.sendMessage(msg.to,"➲ Protection Invite Already Off")
+                                nadya.sendMessage(msg.to,"✪ Protection Invite Already Off✪")
 #-------------------------------------------------------------------------------
                 elif text.lower() == 'cancelprotect on':
                     if msg._from in Owner:
                         if settings["cancelprotect"] == True:
                             if settings["lang"] == "JP":
-                                nadya.sendMessage(msg.to,"➲ Protection Cancel Invite Already On")
+                                nadya.sendMessage(msg.to,"✪ Protection Cancel Invite Already On✪")
                             else:
-                                nadya.sendMessage(msg.to,"➲ Protection Cancel Invite Set To On")
+                                nadya.sendMessage(msg.to,"✪ Protection Cancel Invite Set To On✪")
                         else:
                             settings["cancelprotect"] = True
                             if settings["lang"] == "JP":
-                                nadya.sendMessage(msg.to,"➲ Protection Cancel Invite Set To On")
+                                nadya.sendMessage(msg.to,"✪ Protection Cancel Invite Set To On✪")
                             else:
-                                nadya.sendMessage(msg.to,"➲ Protection Cancel Invite Already On")
+                                nadya.sendMessage(msg.to,"✪ Protection Cancel Invite Already On✪")
                                 
                 elif text.lower() == 'cancelprotect off':
                     if msg._from in Owner:
                         if settings["cancelprotect"] == False:
                             if settings["lang"] == "JP":
-                                nadya.sendMessage(msg.to,"➲ Protection Cancel Invite Already Off")
+                                nadya.sendMessage(msg.to,"✪ Protection Cancel Invite Already Off✪")
                             else:
-                                nadya.sendMessage(msg.to,"➲ Protection Cancel Invite Set To Off")
+                                nadya.sendMessage(msg.to,"✪ Protection Cancel Invite Set To Off✪")
                         else:
                             settings["cancelprotect"] = False
                             if settings["lang"] == "JP":
-                                nadya.sendMessage(msg.to,"➲ Protection Cancel Invite Set To Off")
+                                nadya.sendMessage(msg.to,"✪ Protection Cancel Invite Set To Off✪")
                             else:
-                                nadya.sendMessage(msg.to,"➲ Protection Cancel Invite Already Off")
+                                nadya.sendMessage(msg.to,"✪ Protection Cancel Invite Already Off✪")
 #-------------------------------------------------------------------------------
                 elif text.lower() == 'wahyudi':
                     if msg._from in Owner:
@@ -863,7 +960,7 @@ def lineBot(op):
                         settings["qrprotect"] = True
                         settings["inviteprotect"] = True
                         settings["cancelprotect"] = True
-                        nadya.sendMessage(msg.to,"➲ All Protect Set To On")
+                        nadya.sendMessage(msg.to,"✪ All Protect Set To On Yud✪")
                     else:
                         nadya.sendMessage(msg.to,"Just for Owner")
                         		            
@@ -873,7 +970,7 @@ def lineBot(op):
                         settings["qrprotect"] = False
                         settings["inviteprotect"] = False
                         settings["cancelprotect"] = False
-                        nadya.sendMessage(msg.to,"➲ All Protect Set To Off")
+                        nadya.sendMessage(msg.to,"✪ All Protect Set To Off Yud✪")
                     else:
                         nadya.sendMessage(msg.to,"Just for Owner")
 #-------------------------------------------------------------------------------
@@ -930,8 +1027,9 @@ def lineBot(op):
                     ki2.sendMessage(msg.to,responsename3)
                     ki3.sendMessage(msg.to,responsename4)
                     ki4.sendMessage(msg.to,responsename5)
-                    
-                elif msg.text.lower() == 'absen':
+                    ki5.sendMessage(msg.to,responsename6)
+		
+		elif msg.text.lower() == 'absen':
                     if msg._from in Owner:
                         nadya.sendContact(to, nadyaMID)
                         ki.sendContact(to, kiMID)
